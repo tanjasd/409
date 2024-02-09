@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lämpötilamuunnin</title>
+</head>
+<body>
+    <h1>Lämpötilamuunnin</h1>
+    <label for="temperature">Syötä lämpötila:</label>
+    <input type="text" id="temperature">
+    <select id="unitSelector">
+        <option value="celsiusToFahrenheit">Celsius -> Fahrenheit</option>
+        <option value="fahrenheitToCelsius">Fahrenheit -> Celsius</option>
+    </select>
+    <fieldset>
+        <legend>Valitse desimaalitarkkuus:</legend>
+        <input type="radio" id="oneDecimal" name="decimals" value="1">
+        <label for="oneDecimal">1 desimaali</label>
+        <input type="radio" id="twoDecimals" name="decimals" value="2">
+        <label for="twoDecimals">2 desimaalia</label>
+        <input type="radio" id="threeDecimals" name="decimals" value="3">
+        <label for="threeDecimals">3 desimaalia</label>
+    </fieldset>
+    <button onclick="muunna()">Muunna</button>
+    <p id="vastaus"></p>
+
+    <script src="lampotila.js"></script>
+</body>
+</html>
